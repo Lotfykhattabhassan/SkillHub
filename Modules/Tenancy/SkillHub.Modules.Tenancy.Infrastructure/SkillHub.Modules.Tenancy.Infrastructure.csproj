@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../../../BuildingBlocks/Infrastructure/SkillHub.BuildingBlocks.Infrastructure.csproj" />
+    <ProjectReference Include="../SkillHub.Modules.Tenancy.Application/SkillHub.Modules.Tenancy.Application.csproj" />
+    <ProjectReference Include="../SkillHub.Modules.Tenancy.Domain/SkillHub.Modules.Tenancy.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

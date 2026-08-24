@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+  </PropertyGroup>
+<ItemGroup>
+    <ProjectReference Include="../SkillHub.Modules.Gamification.Application/SkillHub.Modules.Gamification.Application.csproj" />
+    <ProjectReference Include="../SkillHub.Modules.Gamification.Infrastructure/SkillHub.Modules.Gamification.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+</Project>

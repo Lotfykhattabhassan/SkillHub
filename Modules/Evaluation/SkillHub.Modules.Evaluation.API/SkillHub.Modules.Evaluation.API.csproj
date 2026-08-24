@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+  </PropertyGroup>
+<ItemGroup>
+    <ProjectReference Include="../SkillHub.Modules.Evaluation.Application/SkillHub.Modules.Evaluation.Application.csproj" />
+    <ProjectReference Include="../SkillHub.Modules.Evaluation.Infrastructure/SkillHub.Modules.Evaluation.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+</Project>

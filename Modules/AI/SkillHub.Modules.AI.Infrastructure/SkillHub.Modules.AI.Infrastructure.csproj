@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="../SkillHub.Modules.AI.Application/SkillHub.Modules.AI.Application.csproj" />
+    <ProjectReference Include="../SkillHub.Modules.AI.Domain/SkillHub.Modules.AI.Domain.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+  </PropertyGroup>
+
+</Project>

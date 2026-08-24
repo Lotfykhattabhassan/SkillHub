@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="../Modules/AI/SkillHub.Modules.AI.API/SkillHub.Modules.AI.API.csproj" />
+    <ProjectReference Include="../Modules/Challenges/SkillHub.Modules.Challenges.API/SkillHub.Modules.Challenges.API.csproj" />
+    <ProjectReference Include="../Modules/Courses/SkillHub.Modules.Courses.API/SkillHub.Modules.Courses.API.csproj" />
+    <ProjectReference Include="../Modules/Evaluation/SkillHub.Modules.Evaluation.API/SkillHub.Modules.Evaluation.API.csproj" />
+    <ProjectReference Include="../Modules/Gamification/SkillHub.Modules.Gamification.API/SkillHub.Modules.Gamification.API.csproj" />
+    <ProjectReference Include="../Modules/Identity/SkillHub.Modules.Identity.API/SkillHub.Modules.Identity.API.csproj" />
+    <ProjectReference Include="../Modules/Learning/SkillHub.Modules.Learning.API/SkillHub.Modules.Learning.API.csproj" />
+    <ProjectReference Include="../Modules/Notifications/SkillHub.Modules.Notifications.API/SkillHub.Modules.Notifications.API.csproj" />
+    <ProjectReference Include="../Modules/PlatformManagement/SkillHub.Modules.PlatformManagement.API/SkillHub.Modules.PlatformManagement.API.csproj" />
+    <ProjectReference Include="../Modules/Recruitment/SkillHub.Modules.Recruitment.API/SkillHub.Modules.Recruitment.API.csproj" />
+    <ProjectReference Include="../Modules/Reporting/SkillHub.Modules.Reporting.API/SkillHub.Modules.Reporting.API.csproj" />
+    <ProjectReference Include="../Modules/StudentProfile/SkillHub.Modules.StudentProfile.API/SkillHub.Modules.StudentProfile.API.csproj" />
+    <ProjectReference Include="../Modules/Submissions/SkillHub.Modules.Submissions.API/SkillHub.Modules.Submissions.API.csproj" />
+    <ProjectReference Include="../Modules/Talent/SkillHub.Modules.Talent.API/SkillHub.Modules.Talent.API.csproj" />
+    <ProjectReference Include="../Modules/Tenancy/SkillHub.Modules.Tenancy.API/SkillHub.Modules.Tenancy.API.csproj" />
+  </ItemGroup>
+</Project>

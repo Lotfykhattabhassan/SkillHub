@@ -1,0 +1,105 @@
+<Solution>
+  <Folder Name="/BuildingBlocks/">
+    <Project Path="BuildingBlocks/Application/SkillHub.BuildingBlocks.Application.csproj" />
+    <Project Path="BuildingBlocks/Domain/SkillHub.BuildingBlocks.Domain.csproj" />
+    <Project Path="BuildingBlocks/Infrastructure/SkillHub.BuildingBlocks.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Host/">
+    <Project Path="Host/SkillHub.Host.csproj" />
+  </Folder>
+  <Folder Name="/Modules/AI/">
+    <Project Path="Modules/AI/SkillHub.Modules.AI.API/SkillHub.Modules.AI.API.csproj" />
+    <Project Path="Modules/AI/SkillHub.Modules.AI.Application/SkillHub.Modules.AI.Application.csproj" />
+    <Project Path="Modules/AI/SkillHub.Modules.AI.Domain/SkillHub.Modules.AI.Domain.csproj" />
+    <Project Path="Modules/AI/SkillHub.Modules.AI.Infrastructure/SkillHub.Modules.AI.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Modules/Challenges/">
+    <Project Path="Modules/Challenges/SkillHub.Modules.Challenges.API/SkillHub.Modules.Challenges.API.csproj" />
+    <Project Path="Modules/Challenges/SkillHub.Modules.Challenges.Application/SkillHub.Modules.Challenges.Application.csproj" />
+    <Project Path="Modules/Challenges/SkillHub.Modules.Challenges.Domain/SkillHub.Modules.Challenges.Domain.csproj" />
+    <Project Path="Modules/Challenges/SkillHub.Modules.Challenges.Infrastructure/SkillHub.Modules.Challenges.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Modules/Courses/">
+    <Project Path="Modules/Courses/SkillHub.Modules.Courses.API/SkillHub.Modules.Courses.API.csproj" />
+    <Project Path="Modules/Courses/SkillHub.Modules.Courses.Application/SkillHub.Modules.Courses.Application.csproj" />
+    <Project Path="Modules/Courses/SkillHub.Modules.Courses.Domain/SkillHub.Modules.Courses.Domain.csproj" />
+    <Project Path="Modules/Courses/SkillHub.Modules.Courses.Infrastructure/SkillHub.Modules.Courses.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Modules/Evaluation/">
+    <Project Path="Modules/Evaluation/SkillHub.Modules.Evaluation.API/SkillHub.Modules.Evaluation.API.csproj" />
+    <Project Path="Modules/Evaluation/SkillHub.Modules.Evaluation.Application/SkillHub.Modules.Evaluation.Application.csproj" />
+    <Project Path="Modules/Evaluation/SkillHub.Modules.Evaluation.Domain/SkillHub.Modules.Evaluation.Domain.csproj" />
+    <Project Path="Modules/Evaluation/SkillHub.Modules.Evaluation.Infrastructure/SkillHub.Modules.Evaluation.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Modules/Gamification/">
+    <Project Path="Modules/Gamification/SkillHub.Modules.Gamification.API/SkillHub.Modules.Gamification.API.csproj" />
+    <Project Path="Modules/Gamification/SkillHub.Modules.Gamification.Application/SkillHub.Modules.Gamification.Application.csproj" />
+    <Project Path="Modules/Gamification/SkillHub.Modules.Gamification.Domain/SkillHub.Modules.Gamification.Domain.csproj" />
+    <Project Path="Modules/Gamification/SkillHub.Modules.Gamification.Infrastructure/SkillHub.Modules.Gamification.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Modules/Identity/">
+    <Project Path="Modules/Identity/SkillHub.Modules.Identity.API/SkillHub.Modules.Identity.API.csproj" />
+    <Project Path="Modules/Identity/SkillHub.Modules.Identity.Application/SkillHub.Modules.Identity.Application.csproj" />
+    <Project Path="Modules/Identity/SkillHub.Modules.Identity.Domain/SkillHub.Modules.Identity.Domain.csproj" />
+    <Project Path="Modules/Identity/SkillHub.Modules.Identity.Infrastructure/SkillHub.Modules.Identity.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Modules/Learning/">
+    <Project Path="Modules/Learning/SkillHub.Modules.Learning.API/SkillHub.Modules.Learning.API.csproj" />
+    <Project Path="Modules/Learning/SkillHub.Modules.Learning.Application/SkillHub.Modules.Learning.Application.csproj" />
+    <Project Path="Modules/Learning/SkillHub.Modules.Learning.Domain/SkillHub.Modules.Learning.Domain.csproj" />
+    <Project Path="Modules/Learning/SkillHub.Modules.Learning.Infrastructure/SkillHub.Modules.Learning.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Modules/Notifications/">
+    <Project Path="Modules/Notifications/SkillHub.Modules.Notifications.API/SkillHub.Modules.Notifications.API.csproj" />
+    <Project Path="Modules/Notifications/SkillHub.Modules.Notifications.Application/SkillHub.Modules.Notifications.Application.csproj" />
+    <Project Path="Modules/Notifications/SkillHub.Modules.Notifications.Domain/SkillHub.Modules.Notifications.Domain.csproj" />
+    <Project Path="Modules/Notifications/SkillHub.Modules.Notifications.Infrastructure/SkillHub.Modules.Notifications.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Modules/PlatformManagement/">
+    <Project Path="Modules/PlatformManagement/SkillHub.Modules.PlatformManagement.API/SkillHub.Modules.PlatformManagement.API.csproj" />
+    <Project Path="Modules/PlatformManagement/SkillHub.Modules.PlatformManagement.Application/SkillHub.Modules.PlatformManagement.Application.csproj" />
+    <Project Path="Modules/PlatformManagement/SkillHub.Modules.PlatformManagement.Domain/SkillHub.Modules.PlatformManagement.Domain.csproj" />
+    <Project Path="Modules/PlatformManagement/SkillHub.Modules.PlatformManagement.Infrastructure/SkillHub.Modules.PlatformManagement.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Modules/Recruitment/">
+    <Project Path="Modules/Recruitment/SkillHub.Modules.Recruitment.API/SkillHub.Modules.Recruitment.API.csproj" />
+    <Project Path="Modules/Recruitment/SkillHub.Modules.Recruitment.Application/SkillHub.Modules.Recruitment.Application.csproj" />
+    <Project Path="Modules/Recruitment/SkillHub.Modules.Recruitment.Domain/SkillHub.Modules.Recruitment.Domain.csproj" />
+    <Project Path="Modules/Recruitment/SkillHub.Modules.Recruitment.Infrastructure/SkillHub.Modules.Recruitment.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Modules/Reporting/">
+    <Project Path="Modules/Reporting/SkillHub.Modules.Reporting.API/SkillHub.Modules.Reporting.API.csproj" />
+    <Project Path="Modules/Reporting/SkillHub.Modules.Reporting.Application/SkillHub.Modules.Reporting.Application.csproj" />
+    <Project Path="Modules/Reporting/SkillHub.Modules.Reporting.Domain/SkillHub.Modules.Reporting.Domain.csproj" />
+    <Project Path="Modules/Reporting/SkillHub.Modules.Reporting.Infrastructure/SkillHub.Modules.Reporting.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Modules/StudentProfile/">
+    <Project Path="Modules/StudentProfile/SkillHub.Modules.StudentProfile.API/SkillHub.Modules.StudentProfile.API.csproj" />
+    <Project Path="Modules/StudentProfile/SkillHub.Modules.StudentProfile.Application/SkillHub.Modules.StudentProfile.Application.csproj" />
+    <Project Path="Modules/StudentProfile/SkillHub.Modules.StudentProfile.Domain/SkillHub.Modules.StudentProfile.Domain.csproj" />
+    <Project Path="Modules/StudentProfile/SkillHub.Modules.StudentProfile.Infrastructure/SkillHub.Modules.StudentProfile.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Modules/Submissions/">
+    <Project Path="Modules/Submissions/SkillHub.Modules.Submissions.API/SkillHub.Modules.Submissions.API.csproj" />
+    <Project Path="Modules/Submissions/SkillHub.Modules.Submissions.Application/SkillHub.Modules.Submissions.Application.csproj" />
+    <Project Path="Modules/Submissions/SkillHub.Modules.Submissions.Domain/SkillHub.Modules.Submissions.Domain.csproj" />
+    <Project Path="Modules/Submissions/SkillHub.Modules.Submissions.Infrastructure/SkillHub.Modules.Submissions.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Modules/Talent/">
+    <Project Path="Modules/Talent/SkillHub.Modules.Talent.API/SkillHub.Modules.Talent.API.csproj" />
+    <Project Path="Modules/Talent/SkillHub.Modules.Talent.Application/SkillHub.Modules.Talent.Application.csproj" />
+    <Project Path="Modules/Talent/SkillHub.Modules.Talent.Domain/SkillHub.Modules.Talent.Domain.csproj" />
+    <Project Path="Modules/Talent/SkillHub.Modules.Talent.Infrastructure/SkillHub.Modules.Talent.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Modules/Tenancy/">
+    <Project Path="Modules/Tenancy/SkillHub.Modules.Tenancy.API/SkillHub.Modules.Tenancy.API.csproj" />
+    <Project Path="Modules/Tenancy/SkillHub.Modules.Tenancy.Application/SkillHub.Modules.Tenancy.Application.csproj" />
+    <Project Path="Modules/Tenancy/SkillHub.Modules.Tenancy.Domain/SkillHub.Modules.Tenancy.Domain.csproj" />
+    <Project Path="Modules/Tenancy/SkillHub.Modules.Tenancy.Infrastructure/SkillHub.Modules.Tenancy.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="Tests/SkillHub.Tests.Architecture/SkillHub.Tests.Architecture.csproj" />
+    <Project Path="Tests/SkillHub.Tests.Integration/SkillHub.Tests.Integration.csproj" />
+    <Project Path="Tests/SkillHub.Tests.Unit/SkillHub.Tests.Unit.csproj" />
+  </Folder>
+</Solution>

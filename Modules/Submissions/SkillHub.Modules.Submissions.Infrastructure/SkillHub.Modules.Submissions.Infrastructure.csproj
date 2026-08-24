@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="../SkillHub.Modules.Submissions.Application/SkillHub.Modules.Submissions.Application.csproj" />
+    <ProjectReference Include="../SkillHub.Modules.Submissions.Domain/SkillHub.Modules.Submissions.Domain.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+  </PropertyGroup>
+
+</Project>
