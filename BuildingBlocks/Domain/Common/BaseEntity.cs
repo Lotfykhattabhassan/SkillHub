@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using SkillHub.BuildingBlocks.Domain.Common.Events;
 
 namespace SkillHub.BuildingBlocks.Domain.Common
 {
@@ -15,7 +16,10 @@ namespace SkillHub.BuildingBlocks.Domain.Common
         public bool IsDeleted { get; protected set; }
 
         public DateTime? DeletedAt { get; protected set; }
-        protected BaseEntity() { }
+        protected BaseEntity()
+        {
+            CreatedAt = DateTime.UtcNow;
+        }
         protected BaseEntity(TId id)
         {
             Id = id;
@@ -40,6 +44,26 @@ namespace SkillHub.BuildingBlocks.Domain.Common
         public void MarkAsUpdated()
         {
             UpdatedAt = DateTime.UtcNow;
+        }
+
+        private readonly List<IDomainEvent> _domainEvents = [];
+
+        public IReadOnlyCollection<IDomainEvent> DomainEvents
+            => _domainEvents.AsReadOnly();
+
+        protected void AddDomainEvent(IDomainEvent domainEvent)
+        {
+            _domainEvents.Add(domainEvent);
+        }
+
+        protected void RemoveDomainEvent(IDomainEvent domainEvent)
+        {
+            _domainEvents.Remove(domainEvent);
+        }
+
+        public void ClearDomainEvents()
+        {
+            _domainEvents.Clear();
         }
     }
 

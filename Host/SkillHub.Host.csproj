@@ -1,6 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <ItemGroup>
+      <PackageReference Include="FluentValidation" />
+      <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Swashbuckle.AspNetCore" />
     <ProjectReference Include="../Modules/AI/SkillHub.Modules.AI.API/SkillHub.Modules.AI.API.csproj" />
     <ProjectReference Include="../Modules/Challenges/SkillHub.Modules.Challenges.API/SkillHub.Modules.Challenges.API.csproj" />
     <ProjectReference Include="../Modules/Courses/SkillHub.Modules.Courses.API/SkillHub.Modules.Courses.API.csproj" />

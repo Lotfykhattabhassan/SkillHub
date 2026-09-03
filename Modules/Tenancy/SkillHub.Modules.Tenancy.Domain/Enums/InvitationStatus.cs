@@ -4,6 +4,11 @@ using System.Text;
 
 namespace SkillHub.Modules.Tenancy.Domain.Enums;
 
-internal class InvitationStatus
+public enum InvitationStatus
 {
+    Pending,
+    Accepted,
+    Rejected,
+    Expired,
+    Revoked
 }

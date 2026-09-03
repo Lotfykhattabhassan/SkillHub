@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using SkillHub.BuildingBlocks.Domain.Common;
+using SkillHub.BuildingBlocks.Domain.Common.Events;
 using SkillHub.Modules.Tenancy.Domain.Enums;
 
 namespace SkillHub.Modules.Tenancy.Domain.Entities;
@@ -23,21 +24,32 @@ public class TenantInvitation : BaseEntity<int>
 
         TenantId = tenantId;
         Role = role;
+        if ( string.IsNullOrWhiteSpace( email ))
+            throw new ArgumentNullException(nameof(email));
+        if ( !email.Contains("@") )
+            throw new ArgumentException("Email must contains @",nameof(email));
         Email = email;
         Status = InvitationStatus.Pending;
         InvitedAt = DateTime.UtcNow;
+        if ( expiresAt <= DateTime.UtcNow )
+            throw new ArgumentOutOfRangeException(nameof(expiresAt));
         ExpiresAt = expiresAt;
     }
-
-    public record InvitationAccepted(int id, int tenantId)
-    {
-        public DateTime OccurredAt { get; } = DateTime.UtcNow;
-    }
-
     public void Accept()
     {
-        if (Status == InvitationStatus.Pending || Status == InvitationStatus.Expired )
-            Status = InvitationStatus.Accepted;
+        if (Status != InvitationStatus.Pending)
+            return;
+
+        if (DateTime.UtcNow >= ExpiresAt)
+        {
+            Status = InvitationStatus.Expired;
+            return;
+        }
+
+        Status = InvitationStatus.Accepted;
+
+        AddDomainEvent(
+            new InvitationAccepted(Id, TenantId));
     }
 
     public void Revoke()
@@ -49,5 +61,13 @@ public class TenantInvitation : BaseEntity<int>
     {
         if (Status == InvitationStatus.Pending)
             Status = InvitationStatus.Rejected  ;
+    }
+    public void Expire()
+    {
+        if (Status == InvitationStatus.Pending &&
+            DateTime.UtcNow >= ExpiresAt)
+        {
+            Status = InvitationStatus.Expired;
+        }
     }
 }

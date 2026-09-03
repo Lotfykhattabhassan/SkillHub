@@ -4,6 +4,10 @@ using System.Text;
 
 namespace SkillHub.Modules.Tenancy.Domain.Enums;
 
-internal class MembershipStatus
+public enum MembershipStatus
 {
+    Pending,
+    Active,
+    Suspended,
+    Revoked
 }

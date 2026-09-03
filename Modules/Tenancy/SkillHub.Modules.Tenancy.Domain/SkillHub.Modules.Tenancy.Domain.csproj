@@ -3,4 +3,8 @@
   <PropertyGroup>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\BuildingBlocks\Domain\SkillHub.BuildingBlocks.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
