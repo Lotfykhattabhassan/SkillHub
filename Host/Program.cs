@@ -7,6 +7,9 @@ using Microsoft.OpenApi;
 using SkillHub.Modules.Identity.Application;
 using SkillHub.Modules.Identity.Infrastructure;
 using SkillHub.Modules.Identity.Infrastructure.Configuration;
+using SkillHub.Modules.StudentProfile.Infrastructure;
+using SkillHub.Modules.StudentProfile.Application;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +19,8 @@ builder.Services.AddControllers()
 
 builder.Services.AddIdentityApplication();
 builder.Services.AddIdentityInfrastructure(builder.Configuration);
-
+builder.Services.AddStudentProfileApplication();
+builder.Services.AddStudentProfileInfrastructure(builder.Configuration);
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerGen(options =>

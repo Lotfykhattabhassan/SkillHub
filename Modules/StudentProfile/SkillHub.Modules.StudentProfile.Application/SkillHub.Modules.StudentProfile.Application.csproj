@@ -4,8 +4,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" />
+    <PackageReference Include="MediatR" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="../../../BuildingBlocks/Application/SkillHub.BuildingBlocks.Application.csproj" />
     <ProjectReference Include="../SkillHub.Modules.StudentProfile.Domain/SkillHub.Modules.StudentProfile.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Languages\Exceptions\" />
+    <Folder Include="Features\Profiles\Exceptions\" />
+    <Folder Include="Features\Skills\Exceptions\" />
+    <Folder Include="Features\SocialLinks\Exceptions\" />
   </ItemGroup>
 
 </Project>
