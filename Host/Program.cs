@@ -7,20 +7,29 @@ using Microsoft.OpenApi;
 using SkillHub.Modules.Identity.Application;
 using SkillHub.Modules.Identity.Infrastructure;
 using SkillHub.Modules.Identity.Infrastructure.Configuration;
-using SkillHub.Modules.StudentProfile.Infrastructure;
 using SkillHub.Modules.StudentProfile.Application;
+using SkillHub.Modules.StudentProfile.Infrastructure;
+using SkillHub.Modules.Tenancy.Application;
+using SkillHub.Modules.Tenancy.Infrastructure;
+using SkillHub.Modules.Tenancy.Infrastructure.Authentication;
 
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers()
-     .AddApplicationPart(
-        typeof(SkillHub.Modules.Identity.API.Controllers.IdentityController).Assembly);
+    .AddApplicationPart(
+        typeof(SkillHub.Modules.Identity.API.Controllers.IdentityController).Assembly)
+    .AddApplicationPart(
+        typeof(SkillHub.Modules.StudentProfile.API.Controllers.StudentProfileController).Assembly)
+    .AddApplicationPart(
+        typeof(SkillHub.Modules.Tenancy.API.Controllers.TenantsController).Assembly);
 
 builder.Services.AddIdentityApplication();
 builder.Services.AddIdentityInfrastructure(builder.Configuration);
 builder.Services.AddStudentProfileApplication();
 builder.Services.AddStudentProfileInfrastructure(builder.Configuration);
+builder.Services.AddTenancyInfrastructure(builder.Configuration);
+builder.Services.AddTenancyApplication();
 builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerGen(options =>
@@ -83,6 +92,9 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseAuthentication();
+
+app.UseMiddleware<TenantMembershipMiddleware>();
+
 app.UseAuthorization();
 
 app.MapControllers();

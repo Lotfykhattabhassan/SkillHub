@@ -1,13 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace SkillHub.Modules.StudentProfile.Infrastructure.Persistence.Configurations;
 
 public class StudentLanguageConfiguration : IEntityTypeConfiguration<Domain.Entities.StudentLanguage>
 {
-    public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<Domain.Entities.StudentLanguage> builder)
+    public void Configure(EntityTypeBuilder<Domain.Entities.StudentLanguage> builder)
     {
         builder.HasKey(x => x.Id);
 

@@ -1,7 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Text;
-using MediatR;
 using FluentValidation;
 using Microsoft.Extensions.DependencyInjection;
 using SkillHub.Modules.Identity.Application.Behaviors;

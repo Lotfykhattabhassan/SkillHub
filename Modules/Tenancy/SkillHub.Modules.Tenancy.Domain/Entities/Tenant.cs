@@ -1,6 +1,3 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using SkillHub.BuildingBlocks.Domain.Common;
 using SkillHub.Modules.Tenancy.Domain.Enums;
 
@@ -13,15 +10,20 @@ namespace SkillHub.Modules.Tenancy.Domain.Entities
         public TenantStatus Status { get; private set; }
 
         private Tenant() { }
-        public Tenant(int id, string name, string slug)
-            : base(id)
+        private Tenant( string name, string slug)
         {
             Rename(name);
             ChangeSlug(slug);
 
             Status = TenantStatus.Pending;
         }
-
+        public static Tenant Create(
+            string name,
+            string slug
+            )
+        {
+            return new Tenant(name, slug);
+        }
         public void Rename(string name)
         {
             if (string.IsNullOrWhiteSpace(name) || name.All(char.IsDigit))

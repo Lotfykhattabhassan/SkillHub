@@ -17,8 +17,7 @@ public class TenantInvitation : BaseEntity<int>
     public DateTime InvitedAt { get; private set; }
 
     private TenantInvitation() { }
-    public TenantInvitation(int id, int tenantId,string email, MembershipRole role, DateTime expiresAt) 
-        : base(id)
+    private TenantInvitation(int tenantId,string email, MembershipRole role, DateTime expiresAt)
     {
         if ( tenantId <= 0 ) throw new ArgumentOutOfRangeException(nameof(tenantId));
 
@@ -28,12 +27,17 @@ public class TenantInvitation : BaseEntity<int>
             throw new ArgumentNullException(nameof(email));
         if ( !email.Contains("@") )
             throw new ArgumentException("Email must contains @",nameof(email));
-        Email = email;
+        Email = email.Trim().ToLowerInvariant();
         Status = InvitationStatus.Pending;
         InvitedAt = DateTime.UtcNow;
         if ( expiresAt <= DateTime.UtcNow )
             throw new ArgumentOutOfRangeException(nameof(expiresAt));
         ExpiresAt = expiresAt;
+    }
+
+    public static TenantInvitation Create(int tenantId, string email, MembershipRole role, DateTime expiresAt)
+    {
+        return new TenantInvitation(tenantId,email,role,expiresAt);
     }
     public void Accept()
     {
